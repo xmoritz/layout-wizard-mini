@@ -1,0 +1,184 @@
+$colormix-1-a: rgb(0, 109, 193);
+$colormix-1-b: rgb(54, 97, 130);
+$colormix-1-c: rgb(0, 39, 69);
+
+$colormix-2-a: rgb(84, 181, 123);
+$colormix-2-b: rgb(27, 118, 64);
+$colormix-2-c: rgb(0, 58, 23);
+
+$colormix-3-a: rgb(242, 155, 217);
+$colormix-3-b: rgb(113, 89, 106);
+$colormix-3-c: rgb(92, 11, 69);
+
+.LayoutCard {
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+  background-color: rgb(194, 225, 206);
+  border: 1px solid gray;
+  padding: 10px;
+
+  &:hover {
+    border: 1px dotted black;
+  }
+
+  &-header, &-body, &-footer {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 200px;
+  }
+
+  &-header {
+    background-color: #ccc;
+  }
+
+  &-body {
+    color: rgb(28, 28, 28);
+    background-color: rgb(152, 152, 152);
+  }
+
+  &-footer {
+    color: white;
+    background-color: rgb(87, 87, 87);
+  }
+
+  &--color-1 {
+    .LayoutCard-header {
+      background-color: $colormix-1-a;
+    }
+
+    .LayoutCard-body {
+      background-color: $colormix-1-b;
+    }
+
+    .LayoutCard-footer {
+      background-color: $colormix-1-c;
+    }
+  }
+
+  &--color-2 {
+    .LayoutCard-header {
+      background-color: $colormix-2-a;
+    }
+
+    .LayoutCard-body {
+      background-color: $colormix-2-b;
+    }
+
+    .LayoutCard-footer {
+      background-color: $colormix-2-c;
+    }
+  }
+
+  &--color-3 {
+
+    .LayoutCard-header {
+      background-color: $colormix-3-a;
+    }
+
+    .LayoutCard-body {
+      background-color: $colormix-3-b;
+    }
+
+    .LayoutCard-footer {
+      background-color: $colormix-3-c;
+    }
+  }
+}
+
+.ColorMix {
+  border: 1px solid black;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px dotted black;
+  }
+
+  &-top, &-mid, &-bottom {
+    height: 40px;
+  }
+
+  &--1 {
+    .ColorMix-top {
+      background-color: $colormix-1-a;
+    }
+
+    .ColorMix-mid {
+      background-color: $colormix-1-b;
+    }
+
+    .ColorMix-bottom {
+      background-color: $colormix-1-c;
+    }
+  }
+
+  &--2 {
+    .ColorMix-top {
+      background-color: $colormix-2-a;
+    }
+
+    .ColorMix-mid {
+      background-color: $colormix-2-b;
+    }
+
+    .ColorMix-bottom {
+      background-color: $colormix-2-c;
+    }
+  }
+
+  &--3 {
+    .ColorMix-top {
+      background-color: $colormix-3-a;
+    }
+
+    .ColorMix-mid {
+      background-color: $colormix-3-b;
+    }
+
+    .ColorMix-bottom {
+      background-color: $colormix-3-c;
+    }
+  }
+}
+
+.Tagline {
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgb(169, 168, 168);
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 40px;
+
+  &:hover {
+    border: 1px dotted black;
+  }
+}
+
+.Result {
+  min-width: 230px;
+
+  .LayoutCard {
+    cursor: default;
+  }
+}
+
+.Menu {
+  &-item {
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 20px;
+
+    &:hover {
+      background-color: rgb(136, 135, 135);
+    }
+  }
+
+  &-divider {
+    background-color: black;
+    height: 1px;
+  }
+}
